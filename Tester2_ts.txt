@@ -1,0 +1,30 @@
+package testscript;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+
+import org.junit.Assert;
+import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class TestScript1 {
+	WebDriver driver;
+	
+
+@Given("user open chrome browser")
+public void user_open_chrome_browser() {
+	System.setProperty("webdriver.chrome.driver", "C:\\Users\\Bharath Nandan\\Downloads\\chromedriver_win32\\chromedriver.exe");
+	driver= new ChromeDriver();
+   
+}
+
+@Given("navigates to newtours")
+public void navigates_to_newtours() {
+	driver.get("https://demo.guru99.com/test/newtours/");
+
+//UPDATED
+   
+}
+}
