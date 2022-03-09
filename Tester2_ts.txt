@@ -23,6 +23,8 @@ public void user_open_chrome_browser() {
 @Given("navigates to newtours")
 public void navigates_to_newtours() {
 	driver.get("https://demo.guru99.com/test/newtours/");
+
+//UPDATED
    
 }
 }
